@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:layout_height="240dp">
+
+    <TableRow
+        android:id="@+id/table_row"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:background="#CDCDCDCD" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_pound_sterling_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_euro_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_swiss_frank_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_dollar_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_belarusian_ruble_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_israel_shekel_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_polish_zloty_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+
+            <Button
+                android:id="@+id/btn_krona_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_ukrainian_hryvnia_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_russian_ruble_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_kazakhstan_tenge_f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_initial_setup"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/initial_setup_button_text_size" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

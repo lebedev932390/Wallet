@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="left_today">осталось на сегодня</string>
+    <string name="left_until">осталось до</string>
+    <string name="out_of_budget">бюджет потрачен</string>
+    <string name="currency">Валюта</string>
+    <string name="budget">Бюджет</string>
+    <string name="first_day_of_month">Начало месяца</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="january">Января</string>
+    <string name="february">Февраля</string>
+    <string name="march">Марта</string>
+    <string name="april">Апреля</string>
+    <string name="may">Мая</string>
+    <string name="june">Июня</string>
+    <string name="july">Июля</string>
+    <string name="august">Августа</string>
+    <string name="september">Сентября</string>
+    <string name="october">Октября</string>
+    <string name="november">Ноября</string>
+    <string name="december">Декабря</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="enter_note">Введите или выберите заметку</string>
+    <string name="pound_sterling">Фунт стерлингов</string>
+    <string name="euro">Евро</string>
+    <string name="swiss_frank">Швейцарский франк</string>
+    <string name="dollar">Доллар</string>
+    <string name="belarusian_ruble">Белорусский рубль</string>
+    <string name="israeli_shekel">Израильский шекель</string>
+    <string name="polish_złoty">Польский злотый</string>
+    <string name="krona">Крона</string>
+    <string name="ukrainian_hryvnia">Украинская гривна</string>
+    <string name="russian_ruble">Российский рубль</string>
+    <string name="kazakhstani_tenge">Казахстанский тенге</string>
+    <string name="enter_first_day_of_month">Введите начало месяца</string>
+    <string name="enter_currency">Введите валюту</string>
+    <string name="enter_budget">Введите бюджет</string>
+    <string name="language">Язык</string>
+    <string name="english">English</string>
+    <string name="russian">Русский</string>
+</resources>

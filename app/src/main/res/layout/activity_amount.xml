@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".View.Amount.AmountActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/keyboard"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/day_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/toolbar_height">
+
+                <TextView
+                    android:id="@+id/amount_day_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_day_budget_int"
+                    android:layout_marginBottom="1.8dp"
+
+                    android:layout_marginEnd="@dimen/quarter_margin"
+                    android:layout_toStartOf="@+id/amount_day_budget_int"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_day_budget_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_amount_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_day_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_day_budget_int"
+                    android:layout_toEndOf="@+id/amount_day_budget_int"
+                    android:text="."
+                    android:layout_marginBottom="1.8dp"
+
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_day_budget_decimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_day_budget_int"
+                    android:layout_marginBottom="1.8dp"
+                    android:layout_toEndOf="@+id/amount_day_dot"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/month_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/toolbar_height">
+
+                <TextView
+                    android:id="@+id/amount_month_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_month_budget_int"
+                    android:layout_marginEnd="@dimen/quarter_margin"
+                    android:layout_toStartOf="@+id/amount_month_budget_int"
+                    android:textColor="@color/main_text_color"
+                    android:layout_marginBottom="1.8dp"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_month_budget_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_amount_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_month_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_month_budget_int"
+                    android:layout_marginBottom="1.8dp"
+                    android:layout_toEndOf="@+id/amount_month_budget_int"
+                    android:text="."
+
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount_month_budget_decimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_month_budget_int"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="1.8dp"
+                    android:layout_toEndOf="@+id/amount_month_dot"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/payment_time_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/toolbarAmount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginTop="@dimen/half_button_height">
+
+
+        <ImageButton
+            android:id="@+id/amountBackButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_ripple"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <TextView
+            android:id="@+id/amount_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/payment_note_text_size" />
+
+        <ImageButton
+            android:id="@+id/btn_date_picker"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_ripple"
+            android:src="@drawable/ic_calendar" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_add_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/double_margin"
+                android:textSize="@dimen/payment_note_text_size"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/button_add_note"
+                android:drawablePadding="@dimen/half_margin"
+                android:minWidth="0dp"
+                android:text="@string/add_note"
+                android:paddingStart="@dimen/double_margin"
+                android:paddingEnd="@dimen/double_margin"
+                android:textAllCaps="false"
+                android:textColor="@color/main_text_color" />
+
+
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="#CDCDCDCD" />
+
+        <RelativeLayout
+            android:id="@+id/layout_amount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_n_half_button_height">
+
+            <TextView
+                android:id="@+id/amount_text_view_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/amount_text_view_amount"
+
+                android:layout_marginEnd="@dimen/quarter_margin"
+                android:layout_toStartOf="@+id/amount_text_view_amount"
+                android:gravity="center"
+                android:textColor="@color/main_text_color"
+                android:layout_marginBottom="4sp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amount_text_view_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/quarter_margin"
+                android:gravity="center"
+                android:textColor="@color/main_text_color"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="#CDCDCDCD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="1"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="2"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="3"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="4"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="5"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="6"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="7"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="8"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="9"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_delete" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="0"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/button_number_text_size" />
+
+                <ImageButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_ok" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

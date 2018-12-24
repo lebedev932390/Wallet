@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.InitialSetup.LanguageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_english"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:textAllCaps="false"
+            android:textSize="@dimen/initial_setup_button_text_size"
+            android:textColor="@color/main_text_color"
+            android:background="@drawable/button_initial_setup"
+            android:text="English language" />
+
+        <Button
+            android:id="@+id/btn_russian"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:textAllCaps="false"
+            android:textSize="@dimen/initial_setup_button_text_size"
+
+            android:textColor="@color/main_text_color"
+            android:layout_below="@id/btn_english"
+            android:background="@drawable/button_initial_setup"
+            android:text="Русский язык" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

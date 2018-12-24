@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_view_height">48dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="double_margin">32dp</dimen>
+    <dimen name="quarter_margin">4dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="half_button_height">24dp</dimen>
+    <dimen name="one_n_half_button_height">60dp</dimen>
+    <dimen name="button_number_text_size">30sp</dimen>
+    <dimen name="button_width_five_height">240dp</dimen>
+    <dimen name="large_text_size">36sp</dimen>
+
+
+    <dimen name="payment_time_text_size">18sp</dimen>
+    <dimen name="payment_amount_text_size">27sp</dimen>
+
+    <dimen name="payment_note_text_size">14sp</dimen>
+    <dimen name="initial_setup_button_text_size">18sp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+
+    <item android:state_pressed="false" android:state_checked="true"
+        android:drawable="@drawable/ic_edit_checked"/>
+
+    <item android:state_pressed="false" android:state_checked="false"
+        android:drawable="@drawable/ic_edit_unchecked"/>
+
+
+
+
+
+</selector>

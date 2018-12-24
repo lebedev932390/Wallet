@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Wallet</string>
+
+    <!-- Main -->
+    <string name="left_today">left today</string>
+    <string name="left_until">left until</string>
+    <string name="out_of_budget">out of budget</string>
+    <!-- Settings -->
+
+    <string name="currency">Currency</string>
+    <string name="budget">Budget</string>
+    <string name="first_day_of_month">First day of month</string>
+
+
+    <!-- Payment history -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <!-- Amount -->
+
+    <string name="add_note">Add note</string>
+
+    <!-- Note -->
+    <string name="enter_note">Type your note here, or pick from list</string>
+
+    <!-- Currencies -->
+    <string name="pound_sterling">Pound sterling</string>
+    <string name="euro">Euro</string>
+    <string name="swiss_frank">Swiss frank</string>
+    <string name="dollar">Dollar</string>
+    <string name="belarusian_ruble">Belarusian ruble</string>
+    <string name="israeli_shekel">Israeli shekel</string>
+    <string name="polish_złoty">Polish złoty</string>
+    <string name="krona">Krona</string>
+    <string name="ukrainian_hryvnia">Ukrainian hryvnia</string>
+    <string name="russian_ruble">Russian ruble</string>
+    <string name="kazakhstani_tenge">Kazakhstani tenge</string>
+    <string name="enter_first_day_of_month">Enter first day of month</string>
+    <string name="enter_currency">Enter currency</string>
+    <string name="enter_budget">Enter budget</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="russian">Русский</string>
+
+</resources>

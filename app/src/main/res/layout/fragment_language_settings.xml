@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    tools:context=".View.Settings.LanguageSettingsFragment">
+
+    <TableRow
+        android:id="@+id/table_row"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:background="#CDCDCDCD" />
+
+    <Button
+        android:id="@+id/btn_english"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_initial_setup"
+        android:textAllCaps="false"
+        android:text="@string/english"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/initial_setup_button_text_size" />
+    <Button
+        android:id="@+id/btn_russian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_initial_setup"
+        android:textAllCaps="false"
+        android:text="@string/russian"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/initial_setup_button_text_size" />
+
+</LinearLayout>
